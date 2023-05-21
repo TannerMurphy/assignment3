@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #3795BD;
+    text-align: center;
+    z-index:2;
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #2F58CD;
+    padding: 5px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000;
+    font-size: 40px;
+    z-index:2;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    border-bottom: 2px solid #3A1078;
+    padding-bottom: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000;
+}
+
+h2, h3, p {
+    text-align: left;
+    
+}
+
+h2 {
+    padding-top: 10px;
+    color: lightblue;
+}
+
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+/*Changes nav links to white and removes the underline*/
+nav a:visited,
+nav a:link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav > ul > li {
+    /*display:inline-bock displays the elements right next to eachother but still have control*/
+    display: inline-block;
+    /*Don't dispaly as a link*/
+    list-style: none;
+    /*Gives some space between each link*/
+    margin: 0 5px 0 5px;
+}
+
+.hamburger-icon {
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 16px;
+}
+
+.paddle-icon {
+    height: 60px;
+    position: absolute;
+    top: 2px;
+    right: 16px;
+}
+/* TITLE BANNER */
+.container {
+    position: relative;
+}
+
+.centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 200;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.banner {
+    width: 1200px;
+    text-align: center;
+}
+
+

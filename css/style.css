@@ -1,0 +1,247 @@
+* { margin: 0 auto; font-family: sans-serif; }
+
+body { 
+	margin: 0 auto; 
+	background-color: lightblue;
+	text-align: center;	
+}
+
+header {
+	height: 60px;
+	background-color: #2F58CD;
+	border-bottom: 2px solid #3A1078;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 -6px 15px 5px rgba(0,0,0,0.8);
+	z-index:3;
+}
+header > h1 {
+	width: calc(100% - 160px);
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000;
+	position: absolute;
+}
+header > .top {
+	position: absolute;
+	left: 20px;
+	height: 50px;
+}
+nav.menu {
+	width: 200px;
+	min-height: 100%;
+	background-color: #03a9f4;
+	position: fixed;
+	left: -200px;
+	top: 62px;
+	transition: .3s all;
+	border-right: 3px solid #2F58CD;
+	z-index:3;
+}
+nav.menu > a {
+    display: block;
+    padding: 10px;
+    margin: 20px 0 0px 20px;
+    color: #3A1078;
+	background-color: lightblue;
+	border-style: outset;
+    text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 30;
+	text-align: left;
+	text-decoration: none;
+}
+nav.menu > a:hover{
+    color: white;   
+}
+.paddle-icon {
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+.logout {
+	top: 5px;
+	right: 20px;
+	padding-top: 0px;
+	position: absolute;
+	color: white; 
+	text-decoration: none;
+	font-weight: bold
+}
+
+.logout > a:hover {
+	color: #03a9f4;
+}
+
+main {
+	width: 100%;
+	max-width: 1200px;
+	padding: 30px;
+	box-sizing: border-box;
+	padding-bottom: 100px;
+	
+}
+h2, h3, h4, p {
+	text-align: left;
+	padding: 5px;
+	max-width: 600px;
+}
+h2 {
+	color:#3A1078;
+	font-size: 50px;
+	border-bottom:3px solid #2F58CD;
+	padding: 10px 10px 10px 10px;
+	
+}
+h3 {
+	color: #4E31AA;
+	font-size: 30px;
+	padding: 10px 10px 10px 10px;
+	
+}
+h4 {
+	font-size: 25px;
+	color: #2F58CD;
+	padding-top: 20px;
+}
+p {
+	font-size: 20px;
+	background: #3795BD;
+	color: white;
+	padding: 10px;
+	
+}
+
+footer {
+	height: 50px;
+	background-color: #4E31AA;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	z-index:3;
+}
+
+.menu_show {
+	left: 0!important;
+}
+
+#welcomeBox {
+	width: 70vw;
+	min-width: 801px;
+	margin: auto;
+	background: #4E31AA;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	box-shadow: 0 0px 10px 5px rgba(0,0,0,0.8);
+}
+
+#welcomeBox > h1 {
+	width: calc(100% - 160px);
+	text-align: center;
+	font-size: 40px;
+	color: white;
+
+}
+
+#welcomeBox > h2 {
+	width: calc(100% - 160px);
+	text-align: center;
+	font-size: 20px;
+	color: #03a9f4;
+
+}
+
+#welcomeBox > a {
+	display: block;
+	width: 300px;
+    text-align: center;
+    padding: 10px;
+    
+    color: #3A1078;
+	background-color: lightblue;
+	border-style: outset;
+    text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 50;
+	text-decoration: none;
+}
+
+#welcomeBox form {
+	width: 50%;
+	min-width: 801px;
+	margin: auto;
+	text-align: left;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+#welcomeBox select,  #welcomeBox input {
+	font-size: 20px;
+	border-width: 0px;
+	height:30px;
+}
+
+.blueButton {
+	color: white;
+	background-color: #2196f3;
+	padding: 5px;
+	height: 32px;
+	font-size: 15px;
+}
+
+
+/* TITLE BANNER */
+.container {
+    position: relative;
+	max-width: 1200px;
+}
+
+.centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 200;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.banner {
+    max-width: 100%;
+    text-align: center;
+	box-shadow: 0 -6px 15px 5px rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 425px) {
+	header h1 {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 360px) {
+	nav.menu {
+		width: 100%;
+		left: -100%; 
+	}
+}
+
+@media screen and (max-width: 800px){
+	.centered-title, header.h1 {
+		font-size: 8vw;
+	}
+	header > h1 {
+		font-size: 5vw;
+	}
+	main > h2, h3, h4, p {
+		font-size:3vw;
+	}
+}
