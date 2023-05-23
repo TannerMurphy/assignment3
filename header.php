@@ -1,9 +1,14 @@
 <?php session_start(); ?>
 <?php
+    // $dbServername = "localhost";
+    // $dbUsername = "root";
+    // $dbPassword = "";
+    // $dbName = "adventure";
+
     $dbServername = "localhost";
-    $dbUsername = "root";
-    $dbPassword = "";
-    $dbName = "adventure";
+    $dbUsername = "id20801825_murphytv25";
+    $dbPassword = "HALIFAXcanoe22!";
+    $dbName = "id20801825_adventure";
 
     $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
