@@ -14,7 +14,7 @@
 
 	// inserting data into table
 	// $sql = "INSERT INTO adventure (adventure_heading, adventure_trip_date, adventure_dutation, adventure_summary) VALUES ('$heading', '$tripDate', '$duration', '$summary')";
-	$sql = "INSERT INTO `adventure`(`adventure_heading`, `adventure_trip_date`, `adventure_duration`, `adventure_summary`) VALUES ('$heading','$tripDate','$duration','$summary')";
+	$sql = "INSERT INTO `id20801825_adventure`(`adventure_heading`, `adventure_trip_date`, `adventure_duration`, `adventure_summary`) VALUES ('$heading','$tripDate','$duration','$summary')";
 	mysqli_query($conn, $sql);
 
 ?>

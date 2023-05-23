@@ -12,7 +12,7 @@
                 <br>
                     <!-- pulling data from database -->
                     <?php 
-                        $sql = "SELECT * FROM adventure;";
+                        $sql = "SELECT * FROM id20801825_adventure;";
                         $result = mysqli_query($conn, $sql);
                         $resultCheck = mysqli_num_rows($result);
                         // Check for data and generate through while loop

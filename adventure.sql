@@ -3,15 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2023 at 03:36 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: May 21, 2023 at 12:48 AM
+-- Generation Time: May 24, 2023 at 12:57 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -26,16 +18,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `adventure`
+-- Database: `id20801825_adventure`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `adventure`
+-- Table structure for table `id20801825_adventure`
 --
 
-CREATE TABLE `adventure` (
+CREATE TABLE `id20801825_adventure` (
   `adventure_heading` text NOT NULL,
   `adventure_trip_date` date NOT NULL,
   `adventure_duration` text NOT NULL,
