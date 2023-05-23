@@ -9,6 +9,7 @@
             <!-- Main text content of the page -->
             <div> 
                 <h2>Upcoming Adventures</h2>
+                <br>
                     <!-- pulling data from database -->
                     <?php 
                         $sql = "SELECT * FROM adventure;";
@@ -17,13 +18,13 @@
                         // Check for data and generate through while loop
                         if ($resultCheck > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
-                                
+                                // generate data into proper formatting for page
                                 echo "
                                     <h3>".$row['adventure_heading']."</h3>
                                     <p> <b>Date:</b> ".$row['adventure_trip_date']."</p>
                                     <p> <b>Duration:</b> ".$row['adventure_duration']."</p>
                                     <h4> Summary: </h4><br> <p>".$row['adventure_summary']."</p>
-                                    </tr>
+                                    <br>
                                 "; 
                             }
                         }

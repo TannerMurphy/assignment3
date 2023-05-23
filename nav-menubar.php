@@ -10,6 +10,7 @@
 <!-- navigation menu that toggles out when the hamburger button is pressed -->
 <nav class="menu">
 	<a href="index.html" class="item_menu">Home</a>
+	<a href="all-adventures.php" class="item_menu">Adventures</a>
 	<a href="#" class="item_menu">Book Trip</a>
 	<a href="index.php" class="item_menu">IT Support</a>
 	<a href="#" class="item_menu">About</a>
