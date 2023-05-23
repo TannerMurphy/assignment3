@@ -23,5 +23,5 @@
     <title>Document</title>
 </head>
 <!-- link to nav bar, imprtant to include -->
-<?php require 'nav-menubar.php';?>
+<?php require 'nav-menubar.php'?>
 <body>
